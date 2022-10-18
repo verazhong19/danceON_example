@@ -28,6 +28,6 @@ function draw() {
     }
     stroke(1);
     fill(255);
-    circle(x, y, 20);
+    circle(x, y, 50);
   }
 
