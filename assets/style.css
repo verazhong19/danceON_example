@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+.codeSnippet {
+    font-family: 'Space Mono' !important;
+}
+
 .mainContainer {
     margin: 20px;
 }
