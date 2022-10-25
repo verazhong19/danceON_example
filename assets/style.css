@@ -11,3 +11,13 @@
 .secondaryContainer {
     margin: 10px;
 }
+
+.canvas{
+    padding: 0.5em;
+}
+
+#codeSnippet {
+    width: 450px;
+    max-height: 409px;
+    overflow-y: scroll;
+}
