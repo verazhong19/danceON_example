@@ -19,7 +19,12 @@ function setup() {
 function draw() {
     x = document.getElementById('x').value;
     y = document.getElementById('y').value;
-
+    poseX = document.getElementById('selectPoseX').value;
+    operatorX = document.getElementById('selectOperationX').value;
+    poseY = document.getElementById('selectPoseY').value;
+    operatorY = document.getElementById('selectOperationY').value;
+    
+    poseXInt = parseInt(poseX);
     xInt = parseInt(x);
     yInt = parseInt(y);
 
@@ -39,9 +44,10 @@ function draw() {
     stroke(1);
     fill(255);
     
-    offsetX = xInt +200
-    offsetY = yInt + 57
+    offsetX = Math.abs(eval(x+operatorX+poseX));
+    offsetY = Math.abs(eval(y+operatorY+poseY))
+
     circle(offsetX, offsetY, 10);
-    //console.log(offsetX)
+
   }
 

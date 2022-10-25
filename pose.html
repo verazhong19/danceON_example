@@ -19,6 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
     <script src="assets/prism/prism.js"></script>
     <script src="examples/poseExample.js"></script>
+    <script src="assets/script.js"></script>
+
 
     <div class="d-flex flex-wrap mainContainer">
         <div id='codeSnippet' class="secondaryContainer">
@@ -27,8 +29,8 @@
     {
         what: 'circle',
         where: {
-            x: pose.leftEye.x + </code> <label>  <input id='x' type="number" min="0" max="399" value="0"> </label>, <code class = "language-js codeSnippet">
-            y: pose.leftEye.y + </code><label>  <input id='y' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">
+            x: pose.</code> <select id="selectPoseX"></select> .x <select id="selectOperationX"> </select><label>  <input id='x' type="number" min="0" max="399" value="0"> </label>, <code class = "language-js codeSnippet">
+            y: pose.</code><select id="selectPoseY"></select> .y<select id="selectOperationY"></select><label>  <input id='y' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">
         },
         how: {
             d: 10,
@@ -42,6 +44,8 @@
         <main class="canvas align-self-center secondaryContainer">
         </main>
     </div>
+    <script src="assets/script.js"></script>
+
   </body>
 </html>
 
