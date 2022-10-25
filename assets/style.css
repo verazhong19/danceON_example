@@ -1,3 +1,7 @@
-.tab {
-    margin-left: 40px;
+.mainContainer {
+    margin: 20px;
+}
+
+.secondaryContainer {
+    margin: 10px;
 }
