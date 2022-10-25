@@ -18,7 +18,7 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
     <script src="assets/prism/prism.js"></script>
-    <script src="examples/staticExample.js"></script>
+    <script src="examples/poseExample.js"></script>
 
     <div class="d-flex flex-wrap mainContainer">
         <div class="secondaryContainer">
@@ -27,11 +27,11 @@
     {
         what: 'circle',
         where: {
-            x: </code> <label>  <input id='x' type="number" min="0" max="399" value="0"> </label>, <code class = "language-js codeSnippet">
-            y: </code><label>  <input id='y' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">
+            x: pose.leftEye.x + </code> <label>  <input id='x' type="number" min="0" max="399" value="0"> </label>, <code class = "language-js codeSnippet">
+            y: pose.leftEye.y + </code><label>  <input id='y' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">
         },
         how: {
-            d: 50,
+            d: 10,
             stroke: "black",
             fill : 'white'
         }
@@ -42,7 +42,6 @@
         <main class="align-self-center secondaryContainer">
         </main>
     </div>
-    <a href="/pose.html">pose offset x/y example</a>
   </body>
 </html>
 
