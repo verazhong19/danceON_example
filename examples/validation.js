@@ -19,14 +19,7 @@ function setup() {
 function draw() {
     x = document.getElementById('x').value;
     y = document.getElementById('y').value;
-    poseX = document.getElementById('selectPoseX').value;
-    operatorX = document.getElementById('selectOperationX').value;
-    poseY = document.getElementById('selectPoseY').value;
-    operatorY = document.getElementById('selectOperationY').value;
-    
-    poseXInt = parseInt(poseX);
-    xInt = parseInt(x);
-    yInt = parseInt(y);
+
 
     image(img, 0,0,400,400);
     textAlign(CENTER)
@@ -41,14 +34,24 @@ function draw() {
         textFont('Helvetica');
         text("You can't see the circle because it is being drawn outside of your canvas.",width/2,height/2)
     }
+
+    if (x>315 && x<330 && y>85 && y<110) {
+      console.log('cool')
+      rectMode(CENTER);
+      noStroke();
+      fill(0,255,0);
+      rect(width/2,height/2,width,50);
+      fill(0);
+      textFont('Helvetica');
+      text("Nice!",width/2,height/2)
+      noLoop();
+    }
     
     stroke(1);
     fill(255);
-    
-    offsetX = Math.abs(eval(x+operatorX+poseX));
-    offsetY = Math.abs(eval(y+operatorY+poseY))
+  
 
-    circle(offsetX, offsetY, 10);
+    circle(x, y, 50);
 
   }
 
