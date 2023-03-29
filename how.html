@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>danceON</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link href="assets/prism/prism.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="assets/prism/prism.js"></script>
+    <script src="examples/how.js"></script>
+    <script src="assets/script.js"></script>
+
+
+    <div class="d-flex flex-wrap mainContainer">
+        <div id='codeSnippet' class="secondaryContainer">
+            <pre> <code class = "language-js codeSnippet text">
+(pose) => [
+    {
+        what: 'circle',
+        where: {
+            x: pose.</code><select id="selectPoseX"></select> .x <select id="selectOperationX"></select><label>  <input id='x' type="number" min="0" max="399" value="0"> </label>, <code class = "language-js codeSnippet">
+            y: pose.</code><select id="selectPoseY"></select> .y <select id="selectOperationY"></select><label>  <input id='y' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">
+        },
+        how: {
+            d: </code><label>  <input id='d' type="number" min="0" max="399" value="0"> </label> <code class = "language-js codeSnippet">,
+            stroke: '</code><label>  <input id='stroke' type="text"> </label><code class = "language-js codeSnippet">',
+            fill : '</code><label>  <input id='fill' type="text"> </label><code class = "language-js codeSnippet">'
+        }
+    },
+];
+            </code> </pre>
+        </div>
+        <main class="canvas align-self-center secondaryContainer">
+        </main>
+    </div>
+    <script src="assets/script.js"></script>
+
+  </body>
+</html>
+
+
